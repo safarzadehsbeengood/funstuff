@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+
+@keyframes typing {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 197px;
+  }
+}
+
+@keyframes cursorBlink {
+  0%,
+  100% {
+    border-right: 3px solid transparent; /* Hide cursor */
+  }
+  50% {
+    border-right: 3px solid #fff; /* Show cursor */
+  }
+}
+
+body {
+  margin: 0;
+  font-family: "Space Mono", monospace;
+  overflow: hidden;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.title-and-cube {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.orbit {
+  position: absolute;
+  top: 15em;
+  left: 54em;
+  width: 800px;
+  height: 800px;
+  -webkit-animation: spin-right 20s linear infinite;
+  animation: spin-right 20s linear infinite;
+  border: 2px solid white;
+  border-radius: 100%;
+}
+
+.ufo {
+  position: absolute;
+  top: -30px;
+  left: 47%;
+}
+
+.ufo img {
+  height: 50px;
+  width: 50px;
+}
+
+
+
+@keyframes spin-right {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.title {
+  position: absolute;
+  font-size: 36px;
+  top: 3em;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #fff; /* Cursor effect */
+  animation: typing 1.5s steps(9, end), cursorBlink 0.5s infinite;
+}
+
+.cube-container {
+  perspective: 1200px;
+}
+
+.cube {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: spin 5s linear infinite;
+  z-index: 1; /* Ensure the cube is on top of the background */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  100% {
+    transform: rotateX(360deg) rotateY(90deg);
+  }
+}
+
+.face {
+  position: absolute;
+  border: 1px solid white;
+  background-color: rgb(255, 134, 154);
+  font-size: 50px;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+
+/* Add space-like background */
+.space-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Allow clicks to pass through */
+  overflow: hidden; /* Hide overflow for seamless effect */
+}
+
+/* Add animated dots for the space background */
+.space-dot {
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  animation: shine 1s infinite; /*move 15s linear infinite; Added shine animation */
+}
+
+@keyframes shine {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.7;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    top: 30px;
+  }
+}
