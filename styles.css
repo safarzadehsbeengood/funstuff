@@ -57,8 +57,9 @@ body {
 }
 
 .ufo img {
-  height: 50px;
-  width: 50px;
+  height: 5vh;
+  width: 5vh;
+  transform: rotate(45deg);
 }
 
 
@@ -97,7 +98,7 @@ body {
   height: 10vh;
   position: relative;
   transform-style:preserve-3d;
-  animation: spin 5s linear infinite;
+  animation: spin 10s linear infinite;
   z-index: 1; /* Ensure the cube is on top of the background */
 }
 
@@ -106,7 +107,7 @@ body {
     transform: rotateX(0deg) rotateY(0deg);
   }
   100% {
-    transform: rotateX(360deg) rotateY(180deg);
+    transform: rotateX(360deg) rotateY(360deg);
   }
 }
 
