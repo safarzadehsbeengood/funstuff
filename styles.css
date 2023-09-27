@@ -44,7 +44,7 @@ body {
   position: absolute;
   width: 100%;
   height: 0;
-  padding-top: 50vh;
+  padding-top: 30vh;
   -webkit-animation: spin-right 40s linear infinite;
   animation: spin-right 40s linear infinite;
   border-radius: 100%;
@@ -93,8 +93,8 @@ body {
 }
 
 .cube {
-  width: 20vh;
-  height: 20vh;
+  width: 10vh;
+  height: 10vh;
   position: relative;
   transform-style:preserve-3d;
   animation: spin 5s linear infinite;
@@ -112,10 +112,10 @@ body {
 
 .face {
   position: absolute;
-  border: 1px solid white;
+  border: 1px solid black;
   background-color: rgb(255, 134, 154);
-  width: 20vh;
-  height: 20vh;
+  width: 10vh;
+  height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
