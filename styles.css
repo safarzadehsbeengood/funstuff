@@ -1,14 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
 
-
+html {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
 
 @keyframes cursorBlink {
+
   0%,
   100% {
-    border-right: 2px solid transparent; /* Hide cursor */
+    border-right: 2px solid transparent;
+    /* Hide cursor */
   }
+
   50% {
-    border-right: 2px solid #c4c4c4; /* Show cursor */
+    border-right: 2px solid #c4c4c4;
+    /* Show cursor */
   }
 }
 
@@ -40,7 +48,7 @@ body {
   height: 0;
   padding-top: 30vh;
   -webkit-animation: spin-right 40s linear infinite;
-  animation: spin-right 40s linear infinite;
+  animation: spin-right 90s linear infinite;
   border-radius: 100%;
 }
 
@@ -53,7 +61,7 @@ body {
 .ufo img {
   height: 5vh;
   width: 5vh;
-  transform: rotate(45deg);
+  /* transform: rotate(45deg); <- for rocket.png */
 }
 
 
@@ -86,7 +94,8 @@ body {
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 2px solid #c4c4c4; /* Cursor effect */
+  border-right: 2px solid #c4c4c4;
+  /* Cursor effect */
   animation: typing 1.5s steps(100, end), cursorBlink 1s steps(1) infinite;
 }
 
@@ -98,15 +107,17 @@ body {
   width: 10vh;
   height: 10vh;
   position: relative;
-  transform-style:preserve-3d;
+  transform-style: preserve-3d;
   animation: spin 10s linear infinite;
-  z-index: 1; /* Ensure the cube is on top of the background */
+  z-index: 1;
+  /* Ensure the cube is on top of the background */
 }
 
 @keyframes spin {
   0% {
     transform: rotateX(0deg) rotateY(0deg);
   }
+
   100% {
     transform: rotateX(360deg) rotateY(360deg);
   }
@@ -129,8 +140,10 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  pointer-events: none; /* Allow clicks to pass through */
-  overflow: hidden; /* Hide overflow for seamless effect */
+  pointer-events: none;
+  /* Allow clicks to pass through */
+  overflow: hidden;
+  /* Hide overflow for seamless effect */
 }
 
 /* Add animated dots for the space background */
@@ -138,22 +151,26 @@ body {
   position: absolute;
   background-color: white;
   border-radius: 50%;
-  animation: shine 1s infinite; /*move 15s linear infinite; Added shine animation */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+  animation: shine 1s infinite;
+  /*move 15s linear infinite; Added shine animation */
 }
 
 @keyframes shine {
+
   0%,
   100% {
     transform: scale(1);
     opacity: 1;
   }
+
   50% {
     transform: scale(1.5);
     opacity: 0.7;
   }
 }
 
-.fa-github-alt { 
+.fa-github-alt {
   color: white;
   transition: transform 0.3s ease-in-out;
 }
