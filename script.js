@@ -1,3 +1,6 @@
+
+
+
 var canvas = document.createElement('canvas');
 canvas.id = "canvas";
 document.body.appendChild(canvas);
@@ -76,3 +79,8 @@ function loop() {
 for (var i = 0; i < num_stars; i++)
     stars.push(new Star());
 loop();
+
+const sun = document.getElementById('toggleSun');
+sun.addEventListener('click', function() {
+    sun.classList.toggle('hidden-background');
+});
