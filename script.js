@@ -82,5 +82,5 @@ loop();
 
 const sun = document.getElementById('toggleSun');
 sun.addEventListener('click', function() {
-    sun.classList.toggle('hidden-background');
+    sun.classList.toggle('show-sun');
 });

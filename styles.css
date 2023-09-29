@@ -80,7 +80,7 @@ canvas {
   width: 50px;
   height: 50px;
   background-color: yellow;
-  background-image: url("imgs/smiley.png");
+  background-image: none;
   background-size: 100% 100%;
   cursor: pointer;
   background-repeat: no-repeat;
@@ -138,8 +138,8 @@ canvas {
   animation: rotating-anim 140s linear infinite;
 }
 
-.hidden-background {
-  background-image: none;
+.show-sun {
+  background-image: url(imgs/smiley.png);
 }
 
 @keyframes rotating-anim {
