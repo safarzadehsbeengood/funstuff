@@ -20,39 +20,29 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  background:#000;
+  justify-content: center;
+  background: #000;
   align-items: center;
   height: 100vh;
 }
 
 canvas {
-  display: block;
-  overflow:hidden;
-  z-index: 0;
-}
-
-.space {
   position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 635px;
-  z-index: 2;
-  width: 635px;
-  border-radius: 100%;
-  overflow: visible;
+  display: block;
+  overflow: hidden;
+  z-index: 0;
 }
 
 .solar-system {
   display: flex;
-  justify-content: center;
   border-radius: 100%;
+  justify-content: center;
+  height: 60vh;
+  z-index: 100;
+  width: 60vh;
   align-items: center;
   position: relative;
-  width: 100%;
-  height: 100%;
-  overflow:visible;
+  overflow: visible;
 }
 
 .orbit {
@@ -63,7 +53,7 @@ canvas {
 }
 
 .orbit::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 20px;
   height: 20px;
@@ -72,13 +62,12 @@ canvas {
   left: 50%;
   border-radius: 50%;
   background: var(--col);
-  box-shadow: 0 0 20px var(--col),
-    0 0 60px var(--col);
+  box-shadow: 0 0 20px var(--col), 0 0 60px var(--col);
 }
 
 .sun {
-  width: 50px;
-  height: 50px;
+  width: 10%;
+  height: 10%;
   background-color: yellow;
   background-image: none;
   background-size: 100% 100%;
@@ -86,55 +75,54 @@ canvas {
   background-repeat: no-repeat;
   z-index: 4;
   border-radius: 50%;
-  box-shadow: 0 0 20px yellow,
-    0 0 60px rgb(255, 81, 0);
+  box-shadow: 0 0 20px yellow, 0 0 60px rgb(255, 81, 0);
 }
 
 .mercury {
-  width: 130px;
-  height: 130px;
+  width: 20%;
+  height: 20%;
   animation: rotating-anim 4s linear infinite;
 }
 
 .venus {
-  width: 175px;
-  height: 175px;
+  width: 30%;
+  height: 30%;
   animation: rotating-anim 10s linear infinite;
 }
 
 .earth {
-  width: 230px;
-  height: 230px;
+  width: 40%;
+  height: 40%;
   animation: rotating-anim 12s linear infinite;
 }
 
 .mars {
-  width: 295px;
-  height: 295px;
+  width: 50%;
+  height: 50%;
   animation: rotating-anim 18s linear infinite;
 }
 
 .jupiter {
-  width: 375px;
-  height: 375px;
+  width: 60%;
+  height: 60%;
   animation: rotating-anim 38s linear infinite;
 }
 
 .saturn {
-  width: 455px;
-  height: 455px;
+  width: 72%;
+  height: 72%;
   animation: rotating-anim 50s linear infinite;
 }
 
 .uranus {
-  width: 535px;
-  height: 535px;
+  width: 85%;
+  height: 85%;
   animation: rotating-anim 60s linear infinite;
 }
 
 .neptune {
-  width: 635px;
-  height: 635px;
+  width: 100%;
+  height: 100%;
   animation: rotating-anim 140s linear infinite;
 }
 
@@ -152,40 +140,7 @@ canvas {
   }
 }
 
-@media screen and (min-width: 300px) and (max-width: 800px) {
-  .venus {
-    width: 185px;
-    height: 185px;
-  }
-
-  .mars {
-    width: 275px;
-    height: 275px;
-  }
-
-  .jupiter {
-    width: 335px;
-    height: 335px;
-  }
-
-  .saturn {
-    width: 380px;
-    height: 380px;
-  }
-
-  .uranus {
-    width: 425px;
-    height: 425px;
-  }
-
-  .neptune {
-    width: 485px;
-    height: 485px;
-  }
-}
-
 @keyframes cursorBlink {
-
   0%,
   100% {
     border-right: 2px solid transparent;
@@ -197,8 +152,6 @@ canvas {
     /* Show cursor */
   }
 }
-
-
 
 @keyframes typing {
   0% {
@@ -212,10 +165,9 @@ canvas {
 
 .title {
   padding: 3px;
-  position: absolute;
+  position: relative;
   font-size: 2em;
   margin: 0px;
-  top: 3vh;
   z-index: 3;
   color: white;
   display: flex;
@@ -289,7 +241,7 @@ canvas {
 }
 
 @media screen and (max-width: 900px) {
-  .space {
+  .solar-system {
     transform: scale(0.5);
   }
 }
