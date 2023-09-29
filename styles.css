@@ -79,7 +79,12 @@ canvas {
 .sun {
   width: 50px;
   height: 50px;
-  background: yellow;
+  background-color: yellow;
+  background-image: url("imgs/smiley.png");
+  background-size: 100% 100%;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  z-index: 4;
   border-radius: 50%;
   box-shadow: 0 0 20px yellow,
     0 0 60px rgb(255, 81, 0);
@@ -131,6 +136,10 @@ canvas {
   width: 635px;
   height: 635px;
   animation: rotating-anim 140s linear infinite;
+}
+
+.hidden-background {
+  background-image: none;
 }
 
 @keyframes rotating-anim {
