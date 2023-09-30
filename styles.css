@@ -33,6 +33,26 @@ canvas {
   z-index: 0;
 }
 
+#play-btn {
+  position: absolute;
+  top: 10vh;
+  left: 10vh;
+  font-size: 20px;
+  width: 20px;
+  height:20px;
+  color: white;
+  border: none;
+  padding: 0;
+  background: none;
+  z-index: 4;
+  cursor: pointer;
+}
+
+.fa-solid {
+  color: white;
+  z-index: 100;
+}
+
 .solar-system {
   display: flex;
   border-radius: 100%;
