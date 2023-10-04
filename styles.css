@@ -183,6 +183,26 @@ canvas {
   }
 }
 
+#GoL {
+  padding: 4px;
+  text-align: center;
+  color: white;
+  font-family: 'Space Mono', monospace;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  font-size: 1rem;
+  outline: none;
+  background: transparent;
+  z-index: 2;
+  border: none;
+}
+
+#GoL:hover {
+  background: rgba(128, 128, 128, 0.356);
+  cursor: pointer;
+}
+
 .title {
   padding: 3px;
   position: relative;
