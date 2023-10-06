@@ -1,3 +1,6 @@
 [submodule "GoL"]
 	path = GoL
 	url = https://github.com/safarzadehsbeengood/GOL.git
+[submodule "fractalTrees"]
+	path = fractalTrees
+	url = git@github.com:safarzadehsbeengood/fractalTrees.git
