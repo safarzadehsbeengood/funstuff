@@ -4,3 +4,9 @@
 [submodule "fractalTrees"]
 	path = fractalTrees
 	url = git@github.com:safarzadehsbeengood/fractalTrees.git
+[submodule "ulamspiral"]
+	path = ulamspiral
+	url = git@github.com:safarzadehsbeengood/ulamspiral.git
+[submodule "astar"]
+	path = astar
+	url = git@github.com:safarzadehsbeengood/astar.git
