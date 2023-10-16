@@ -100,9 +100,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     isPlaying = !isPlaying;
   });
-});
-audio.addEventListener("ended", function () {
+  
+  audio.addEventListener("ended", function () {
   playIcon.style.display = "block";
   pauseIcon.style.display = "none";
   isPlaying = false;
 });
+});
+
