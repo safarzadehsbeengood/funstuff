@@ -207,6 +207,7 @@ canvas {
 .proj-button:hover {
   background: rgba(128, 128, 128, 0.356);
   cursor: pointer;
+  border: 1px solid white;
 }
 
 .proj-button:active {
