@@ -183,44 +183,34 @@ canvas {
   }
 }
 
-#GoL {
-  padding: 4px;
-  text-align: center;
+.projects {
+  display: flex;
+  flex-direction: column;
   color: white;
   font-family: 'Space Mono', monospace;
+  height: 100%;
+  justify-content: center;
   position: absolute;
   right: 0px;
   top: 0px;
-  font-size: 1rem;
-  outline: none;
-  background: transparent;
   z-index: 2;
+}
+
+.proj-button {
+  background: transparent;
   border: none;
-}
-
-#GoL:hover {
-  background: rgba(128, 128, 128, 0.356);
-  cursor: pointer;
-}
-
-#fractalTrees {
   padding: 4px;
-  text-align: center;
-  color: white;
+  text-align: right;
   font-family: 'Space Mono', monospace;
-  position: absolute;
-  right: 0px;
-  top: 30px;
-  font-size: 1rem;
-  outline: none;
-  background: transparent;
-  z-index: 2;
-  border: none;
 }
 
-#fractalTrees:hover {
+.proj-button:hover {
   background: rgba(128, 128, 128, 0.356);
   cursor: pointer;
+}
+
+.proj-button:active {
+  background: rgb(159, 159, 159);
 }
 
 .title {
