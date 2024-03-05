@@ -10,3 +10,6 @@
 [submodule "astar"]
 	path = astar
 	url = git@github.com:safarzadehsbeengood/astar.git
+[submodule "boids"]
+	path = boids
+	url = git@github.com:safarzadehsbeengood/boids.git
