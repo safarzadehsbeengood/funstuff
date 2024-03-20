@@ -185,13 +185,15 @@ canvas {
 
 .projects {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   color: white;
   font-family: 'Space Mono', monospace;
-  justify-content: space-evenly;
+  justify-content: center;
   position: absolute;
-  width: 100vw;
-  bottom: 10px;
+  /* border: 1px solid white; */
+  height: 100%;
+  /* width: 200px; */
+  left: 10px;
   z-index: 2;
 }
 
