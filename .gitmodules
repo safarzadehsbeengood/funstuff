@@ -13,3 +13,6 @@
 [submodule "boids"]
 	path = boids
 	url = git@github.com:safarzadehsbeengood/boids.git
+[submodule "asteroids"]
+	path = asteroids
+	url = git@github.com:safarzadehsbeengood/asteroids.git
