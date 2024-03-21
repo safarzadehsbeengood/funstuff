@@ -16,3 +16,6 @@
 [submodule "asteroids"]
 	path = asteroids
 	url = git@github.com:safarzadehsbeengood/asteroids.git
+[submodule "linearRegression"]
+	path = linearRegression
+	url = git@github.com:safarzadehsbeengood/linearRegression.git
