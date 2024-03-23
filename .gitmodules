@@ -20,8 +20,8 @@
 	path = linearRegression
 	url = git@github.com:safarzadehsbeengood/linearRegression.git
 [submodule "bubbleSortVisualization"]
-	path = bubbleSortVisualization
-	url = git@github.com:safarzadehsbeengood/bubbleSortVisualization.git
+	path = sortingVisualization
+	url = git@github.com:safarzadehsbeengood/sortingVisualization.git
 [submodule "fourier"]
 	path = fourier
 	url = git@github.com:safarzadehsbeengood/fourier.git
