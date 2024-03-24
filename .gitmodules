@@ -25,3 +25,6 @@
 [submodule "fourier"]
 	path = fourier
 	url = git@github.com:safarzadehsbeengood/fourier.git
+[submodule "2draycasting"]
+	path = 2draycasting
+	url = git@github.com:safarzadehsbeengood/2draycasting.git
