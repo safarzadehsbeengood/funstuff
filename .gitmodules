@@ -28,3 +28,6 @@
 [submodule "2draycasting"]
 	path = 2draycasting
 	url = git@github.com:safarzadehsbeengood/2draycasting.git
+[submodule "marchingSquares"]
+	path = marchingSquares
+	url = git@github.com:safarzadehsbeengood/marchingSquares.git
