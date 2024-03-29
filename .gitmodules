@@ -31,3 +31,6 @@
 [submodule "marchingSquares"]
 	path = marchingSquares
 	url = git@github.com:safarzadehsbeengood/marchingSquares.git
+[submodule "polynomialRegression"]
+	path = polynomialRegression
+	url = git@github.com:safarzadehsbeengood/polynomialRegression.git
