@@ -37,3 +37,6 @@
 [submodule "cardioidTT"]
 	path = cardioidTT
 	url = git@github.com:safarzadehsbeengood/cardioidTT.git
+[submodule "mazeGeneration"]
+	path = mazeGeneration
+	url = git@github.com:safarzadehsbeengood/mazeGeneration.git
