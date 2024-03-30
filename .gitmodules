@@ -34,3 +34,6 @@
 [submodule "polynomialRegression"]
 	path = polynomialRegression
 	url = git@github.com:safarzadehsbeengood/polynomialRegression.git
+[submodule "cardioidTT"]
+	path = cardioidTT
+	url = git@github.com:safarzadehsbeengood/cardioidTT.git
