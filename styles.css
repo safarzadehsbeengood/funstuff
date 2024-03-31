@@ -184,15 +184,17 @@ canvas {
 }
 
 .projects {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
+  font-size: 1rem;
   color: white;
   font-family: 'Space Mono', monospace;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   position: absolute;
   /* border: 1px solid white; */
-  height: 100%;
-  width: calc(100vw/5);
+  /* height: calc(100vh/2); */
+  width: calc(100vw/4);
   left: 10px;
   z-index: 2;
 }
@@ -291,4 +293,10 @@ canvas {
 
 .cube-container:hover {
   transform: scale(1.4);
+}
+
+@media screen and (max-width: 900px) {
+  .projects {
+    font-size: 0.7em;
+  }
 }
