@@ -43,3 +43,6 @@
 [submodule "cellularAutomata"]
 	path = cellularAutomata
 	url = git@github.com:safarzadehsbeengood/cellularAutomata.git
+[submodule "mazeSolver"]
+	path = mazeSolver
+	url = git@github.com:safarzadehsbeengood/mazeSolver.git
